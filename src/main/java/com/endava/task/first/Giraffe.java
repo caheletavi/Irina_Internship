@@ -1,8 +1,8 @@
-package ZooPark.java;
+package com.endava.task.first;
 
 import java.time.LocalDateTime;
 
-public class Elephant {
+public class Giraffe {
 
     private String name;
     private int kgOfFood;
@@ -12,7 +12,7 @@ public class Elephant {
     private LocalDateTime birthDate;
     private boolean vipLevel;
 
-    public Elephant(String name, int kgOfFood, float height, double weight, char gender, LocalDateTime birthDate, boolean vipLevel) {
+    public Giraffe(String name, int kgOfFood, float height, double weight, char gender, LocalDateTime birthDate, boolean vipLevel) {
         this.name = name;
         this.kgOfFood = kgOfFood;
         this.height = height;
@@ -22,12 +22,12 @@ public class Elephant {
         this.vipLevel = vipLevel;
     }
 
-    public Elephant(String name, boolean vipLevel) {
+    public Giraffe(String name, char gender) {
         this.name = name;
-        this.vipLevel = vipLevel;
+        this.gender = gender;
     }
 
-    public Elephant() {
+    public Giraffe() {
     }
 
     public String getName() {
@@ -88,7 +88,7 @@ public class Elephant {
 
     @Override
     public String toString() {
-        return "Elephant{" +
+        return "Giraffe{" +
                 "name='" + name + '\'' +
                 ", kgOfFood=" + kgOfFood +
                 ", height=" + height +
